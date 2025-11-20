@@ -173,8 +173,8 @@ if [ -z "$WM_CC" ]
 then
     case "$WM_COMPILER" in
     Gcc*)
-        export WM_CC='gcc-7'
-        export WM_CXX='g++-7'
+        export WM_CC='gcc'
+        export WM_CXX='g++'
         ;;
     Icc)
         export WM_CC='icc'

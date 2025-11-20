@@ -93,8 +93,7 @@ bool Foam::FixedList<T, Size>::operator<(const FixedList<T, Size>& a) const
         }
     }
 
-    // if (Size < a.Size)
-    if (Size < a.size)
+    if (Size < a.Size)
     {
         return true;
     }
