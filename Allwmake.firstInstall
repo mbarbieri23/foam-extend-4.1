@@ -61,18 +61,18 @@ then
 fi
 
 # wmake is required for subsequent targets
-( cd wmake/src && make )
+( cd wmake/src && make 1> log.wmake.src 2>&1)
 
 # build ThirdParty sources
-( cd $WM_THIRD_PARTY_DIR && ./AllMake.pre )
+( cd $WM_THIRD_PARTY_DIR && ./AllMake.pre 1> log.3part 2>&1)
 
 # We make sure the ThirdParty packages environment variables are up-to-date
 # before compiling the rest of OpenFOAM
 . $WM_PROJECT_DIR/etc/settings.sh
 
 # build OpenFOAM libraries and applications
-src/Allwmake
-applications/Allwmake
+src/Allwmake 1> log.src 2>&1
+applications/Allwmake 1> log.app 2>&1
 
 if [ "$1" = doc ]
 then
