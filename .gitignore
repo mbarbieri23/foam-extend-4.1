@@ -110,7 +110,7 @@ etc/bashrc
 etc/settings.csh
 etc/settings.sh
 etc/prefs.csh
-etc/prefs.sh
+# etc/prefs.sh
 
 # make sure that this settings file is not used
 etc/bashrc.preset
@@ -141,4 +141,7 @@ timestamp
 bin
 lib
 
+# ignore log files
+log.*
+log.[0-9]*
 # end-of-file
