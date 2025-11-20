@@ -22,6 +22,7 @@ LIB_LIBS = \
 
 EXE_INC = \
     -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(PARMGRIDGEN_INCLUDE_DIR)    \
     -I$(PARMGRIDGEN_INCLUDE_DIR)/Lib    \
     -I$(PARMGRIDGEN_INCLUDE_DIR)/IMlib  \
     $(TYPE_REAL)
