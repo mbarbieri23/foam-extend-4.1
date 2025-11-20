@@ -2,6 +2,7 @@ include $(RULES)/mplib$(WM_MPLIB)
 
 EXE_INC = \
     $(PFLAGS) $(PINC) \
+    -I$(METIS_INCLUDE_DIR) \
     -I$(PARMETIS_INCLUDE_DIR) \
     -I../decompositionMethods/lnInclude \
     -I../metisDecomp/lnInclude \
